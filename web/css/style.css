@@ -1,0 +1,213 @@
+/*
+Group members:
+Samia Salem Qasem - 201917135
+Shamma Mohammed Almansoori - 202115033
+Maryam Mohammed Alderei - 202116892
+Reem Salman Almarzooqi - 201880578
+ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --orange: #ff7800;
+    --black: #130f40;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,1);
+    --boarder: .2rem solid rgba(0,0,0,1);
+    --outline: .1rem solid rgba(0,0,0,1);
+    --outline-hover: .2rem solid var(--black);
+}
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border:none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+html{
+    font-size:66%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+.VolunteerMain{
+     padding-top: 5rem;
+     align-items: center;
+    background: #eee;
+    background: url('images/wallpaper.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+.header{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #4CAF50;
+    padding: 15px 30px;
+    color: white;
+     text-transform: uppercase;
+    /*box-shadow: var(--box-shadow);*/
+}
+.navbar a{
+    font-size: 1.7rem;
+    margin: 0 1rem;
+    color: #fff;
+}
+.header h1 {
+    margin-right: auto; /* Pushes other elements to the right */
+        font-size: 1.5em;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-grow: 1; /* Navbar takes up extra space, centering itself */
+}
+a:hover{
+    color: yellow;
+}
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 1.5em;
+    }
+    .main-content h2 {
+        font-size: 2em;
+    }
+    .main-content p {
+        font-size: 1em;
+    }
+}
+.main-content {
+    text-align: left;
+    padding: 20px;
+    color: #134a19;
+    max-width: 600px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.main-content2{
+    text-align: left;
+    padding: 2rem;
+    color: #134a19;
+    max-width: 600px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top:8rem;
+}
+
+
+
+.main-content h2 {
+    font-size: 2.5em;
+    color: #134a19;
+    margin-bottom: 20px;
+}
+
+.main-content p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #134a19;
+    margin: 0;
+    padding: 0;
+}
+.heading{
+    text-align: center;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+    font-size: 3.5rem;
+    color:var(--black);
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    border: .2rem solid var(--black);
+    color: var(--black);
+    cursor: pointer;
+}
+.btn:hover{
+    background: lightblue;
+    color: #fff;
+}
+.page-title{
+    text-align: center;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+    font-size: 1rem;
+    color:var(--black);
+}
+.page-title-contact{
+    margin-top: 50px;
+    text-align: center;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+    font-size: 1rem;
+    color:var(--black);
+}
+.search-form{
+    width: 50rem;
+    height: 3rem;
+    background: #fff;
+    border-radius: .5rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.2);
+}
+.search-form input{
+    flex:1;
+    height: 100%;
+    width: 100%;
+    background: none;
+    text-transform: none;
+    font-size: 1.6rem;
+    color:var(--black);
+    padding: 0 1.5rem;
+}
+.search-form button{
+    background: lightskyblue;
+    padding: 2rem 5rem;
+    border: none;
+    outline:none;
+    color:#fff;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.search-container{
+    width:100%;
+    display: flex;
+     align-items: flex-start;
+    justify-content: flex-start;
+}
+.box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+    gap:1.5rem;
+    margin-top: 2rem;
+}
+.box-event{
+    padding: 3rem 2rem;
+    background: #fff;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    text-align: center;
+}
+
+.VolunteerOpPage{
+    padding-top: 70px;
+    background: #F7F7F7;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}

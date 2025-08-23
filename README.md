@@ -1,6 +1,6 @@
 # Volunteer Space
 
-We created a web application as a part of our Internet Computing course project.
+A web application for the Internet Computing course project.
 
 IDE: Netbeans
 
